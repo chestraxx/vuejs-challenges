@@ -3,7 +3,11 @@
 </p>
 
 <p align='center'>
-In progress: ▅▁▁▁▁▁▁▁▁▁▁▁ 3%
+Collection of Vue.js challenges
+</p>
+
+<p align='center'>
+In progress: ▅▁▁▁▁▁▁▁▁▁▁▁ 6%
 </p>
 
 <p align='center'>

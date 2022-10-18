@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, Ref, reactive } from "vue"
+import { ref, isRef, toRef, Ref, reactive } from "vue"
 
 const initial = ref(10)
 const count = ref(0)
@@ -7,6 +7,7 @@ const count = ref(0)
 // Challenge 1: Update ref
 function update(value) {
   // impl...
+  count.value = value;
 }
 
 /**
@@ -15,6 +16,7 @@ function update(value) {
 */
 console.log(
   // impl ? 1 : 0
+   isRef(count) ? 1 : 0
 )
 
 /**
@@ -23,7 +25,7 @@ console.log(
 */
 function initialCount(value: number | Ref<number>) {
   // Make the output be true
-  console.log(value === 10)
+  console.log(value === 10 || value.value === 10)
 }
 
 initialCount(initial)
@@ -39,7 +41,7 @@ const state = reactive({
   foo: 1,
   bar: 2,
 })
-const fooRef = ref() // change the impl...
+const fooRef = toRef(state, 'foo') // change the impl...
 
 // mutating the ref updates the original
 fooRef.value++
