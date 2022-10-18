@@ -4,6 +4,7 @@
 
 <p align='center'>
 Collection of Vue.js challenges
+In progress: ▅▁▁▁▁▁▁▁▁▁▁▁ 5%
 </p>
 
 <p align='center'>
