@@ -3,5 +3,5 @@ import Button from "./Button.vue"
 </script>
 
 <template>
-  <Button/>
+  <Button :type="`primary`"/>
 </template>
