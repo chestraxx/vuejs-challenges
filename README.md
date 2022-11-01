@@ -7,7 +7,7 @@ Collection of Vue.js challenges
 </p>
 
 <p align='center'>
-In progress: ███████▁▁▁▁▁▁ 54%
+In progress: ███████▃▁▁▁▁▁ 57%
 </p>
 
 <p align='center'>
