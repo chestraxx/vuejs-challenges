@@ -1,14 +1,17 @@
-<script setup lang="ts">
-import MyButton from "./MyButton"
+import { h, defineComponent } from 'vue';
 
-const onClick = () => {
-  console.log("onClick")
-}
-
-</script>
-
-<template>
-  <MyButton :disabled="false" @custom-click="onClick">
-    my button
-  </MyButton>
-</template>
+export default defineComponent({
+  name: 'MyButton',
+  emits: ['customClick'],
+  props: ['disabled', 'customClick'],
+  render() {
+    return h(
+      'button',
+      {
+        disabled: this.disabled,
+        onClick: () => this.$emit('customClick'),
+      },
+      this.$slots
+    );
+  },
+});
